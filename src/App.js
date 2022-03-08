@@ -4,8 +4,7 @@ import TextForm from './components/TextForm';
 import AboutH from './components/AboutH';
 import React, { useState }  from "react";
 import Alert from './components/Alert';
-//import React from "react";
-import {BrowserRouter,Routes,Route} from "react-router-dom";
+
 
 
 
@@ -45,17 +44,17 @@ function App() {
   }
   return(
 
-<BrowserRouter>
+<>
 <Navbar mode={mode}toggleMode={toggleMode}/>
 <Alert alert={alert}/>
 <div className='container my-3'>
-        <Routes>
-          <Route  exact path='/about' element = {<AboutH/>}/>
-          <Route exact path='/' element = {<TextForm showAlert ={showAlert} heading = "Enter the text analays blow"mode={mode}/>}/>        
-        </Routes>
+      
+         {/* <AboutH/> */}
+            <TextForm/> 
+     
 
         </div>
-</BrowserRouter>
+        </>
 
   
     
