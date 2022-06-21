@@ -57,7 +57,7 @@ function App() {
          </Route >
        <Route path="/" element={<TextForm showAlert={showAlert}heading ="Enter the text blow" mode={mode}/>
 } />
-     
+      {/* <Route path="invoices" element={<Invoices />} />  */}
     </Routes>
     </div>
   </BrowserRouter>
